@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 import { Container, Nav} from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom'
 
     class Title extends Component{
       render() {
@@ -13,7 +13,7 @@ import { Navbar } from 'react-bootstrap';
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link href="about">About Me</Nav.Link>
+                  <Link to="about">About Me</Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
